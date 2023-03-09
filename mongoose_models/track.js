@@ -4,11 +4,7 @@ const trackSchema = new mongoose.Schema({
     name: String,
     artist: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: 'Artist'
-    },
-    album: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: 'Album'
+      ref: 'artist'
     },
     length: Number,
     lyrics: String

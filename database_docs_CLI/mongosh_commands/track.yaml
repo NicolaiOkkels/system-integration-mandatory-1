@@ -1,0 +1,20 @@
+db.track.insertMany([
+  {
+    name: "Like a Rolling Stone",
+    artist: ObjectId("6409983c8248627f45d18f68"),
+    length: 369,
+    lyrics: "Once upon a time you dressed so fine\nYou threw the bums a dime in your prime, didn't you?"
+  },
+  {
+    name: "Blowin' in the Wind",
+    artist: ObjectId("6409983c8248627f45d18f68"),
+    length: 302,
+    lyrics: "How many roads must a man walk down\nBefore you call him a man?"
+  },
+  {
+    name: "Knockin' on Heaven's Door",
+    artist: ObjectId("6409983c8248627f45d18f68"),
+    length: 179,
+    lyrics: "Mama, take this badge off of me\nI can't use it anymore"
+  }
+])

@@ -12,8 +12,8 @@ const router = Router();
  *       200:
  *         description: Returns all tracks
  */
-router.get("/api/tracks", (req, res) => {
-    const tracks = track.find();
+router.get("/api/tracks", async (req, res) => {
+    const tracks = await track.find();
     res.send({ data: tracks });
 });
 
@@ -26,9 +26,9 @@ router.get("/api/tracks", (req, res) => {
  *       200:
  *         description: Returns the track that was created
  */
-router.post("/api/track", (req, res) => {
+router.post("/api/track", async (req, res) => {
     const track = req.body;
-    track.create(track);
+    await track.create(track);
     res.send({ data: track });
 });
 

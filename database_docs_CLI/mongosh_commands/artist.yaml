@@ -1,0 +1,27 @@
+db.artist.insertMany([
+      {
+        name: "Bob Dylan",
+        genre: "Folk",
+        bio: "Bob Dylan is an American singer-songwriter, author, and visual artist."
+      },
+      {
+        name: "Elvis Presley",
+        genre: "Rock and Roll",
+        bio: "Elvis Presley, also known simply as Elvis, was an American singer and actor."
+      },
+      {
+        name: "Miles Davis",
+        genre: "Jazz",
+        bio: "Miles Davis was an American jazz trumpeter, bandleader, and composer."
+      },
+      {
+        name: "Beyonce",
+        genre: "Pop",
+        bio: "Beyonce is an American singer, songwriter, and actress."
+      },
+      {
+        name: "Kendrick Lamar",
+        genre: "Hip hop",
+        bio: "Kendrick Lamar is an American rapper, songwriter, and record producer."
+      }
+  ])

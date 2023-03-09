@@ -1,0 +1,13 @@
+db.album.insertMany([
+  {
+    name: "Highway 61 Revisited",
+    artist: "6409983c8248627f45d18f68",
+    genre: "Rock",
+    year: 1965,
+    tracks: [
+      ObjectId("64099fb68248627f45d18f70"),
+      ObjectId("64099fb68248627f45d18f71"),
+      ObjectId("64099fb68248627f45d18f72"),
+    ]
+  }
+])

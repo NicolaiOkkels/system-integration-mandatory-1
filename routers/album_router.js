@@ -12,8 +12,8 @@ const router = Router();
  *       200:
  *         description: Returns all tracks
  */
-router.get("/api/albums", (req, res) => {
-    const albums = album.find();
+router.get("/api/albums", async (req, res) => {
+    const albums = await album.find();
     res.send({ data: albums });
 });
 
@@ -26,9 +26,9 @@ router.get("/api/albums", (req, res) => {
  *       200:
  *         description: Returns the album that was created
  */
-router.post("/api/album", (req, res) => {
+router.post("/api/album", async (req, res) => {
     const albumBody = req.body;
-    album.create(albumBody);
+    await album.create(albumBody);
     res.send({ data: albumBody });
 });
 

@@ -12,8 +12,8 @@ const router = Router();
  *       200:
  *         description: Returns all artists
  */
-router.get("/api/artists", (req, res) => {
-    const artistBody = artist.find();
+router.get("/api/artists", async (req, res) => {
+    const artistBody = await artist.find();
     res.send({ data: artistBody });
 });
 
@@ -26,9 +26,9 @@ router.get("/api/artists", (req, res) => {
  *       200:
  *         description: Returns the artist that was created
  */
-router.post("/api/artist", (req, res) => {
+router.post("/api/artist", async (req, res) => {
     const artistBody = req.body;
-    artist.create(artistBody);
+    await artist.create(artistBody);
     res.send({ data: artistBody });
 });
 
